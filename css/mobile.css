@@ -1,0 +1,72 @@
+@media (max-width: 769px) {
+    .logo-wrapper .logo,
+    .logo-wrapper .tagline {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+    .logo-wrapper .tagline {
+        margin-top: 10px;
+    }
+    .header-form-wrapper {
+        text-align: center;
+    }
+    .navbar-default .navbar-toggle,
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: #f1632a;
+        color: #fff;
+        border: 0;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+    .navbar {
+        background-color: #EFEFEF;
+    }
+    #slideshow {
+        min-height: 400px;
+    }
+    .enquiry-box input,
+    .enquiry-box select {
+        height: 40px;
+        margin-bottom: 5px;
+        border: 0;
+    }
+    .enquiry-box .button {
+        height: 40px;
+    }
+    .featured h3,
+    .featured p {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .featured h3 {
+        margin-top: 10px;
+    }
+    .featured p {
+        margin-bottom: 20px;
+    }
+    .footer-bottom ul {
+        display: block;
+        text-align: center;
+    }
+    .footer-bottom li {
+        display: inline-block;
+        float: none;
+    }
+    .footer-top .footer-logo {
+        max-width: 100%;
+        text-align: center;
+    }
+    .footer-top .footer-logo .svg {
+        max-width: 170px;
+    }
+    .footer-top .social-links {
+        text-align: center;
+    }
+    #navbar {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
