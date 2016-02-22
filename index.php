@@ -16,10 +16,10 @@
               <div class="col-md-5">
                 <div class="row">
                   <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Check In" />
+                    <input type="text" placeholder="Check In" class="form-control arrivaldate" position="top"/>
                   </div>
                   <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Check Out" />
+                    <input type="text" placeholder="Check Out" class="form-control departuredate" position="top" />
                   </div>
                   <div class="col-md-4">
                     <select name="" id="" class="form-control">
