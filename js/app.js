@@ -2,6 +2,7 @@ var app = {
     init: function() {
         app.initSVG();
         app.homeSlideInit();
+        app.initMaps();
     },
     onResize: function() {
 
@@ -12,6 +13,37 @@ var app = {
             slides: '.slide-item',
             timeout: 4000
         });
+    },
+    initMaps: function() {
+        if(!jQuery("#content").hasClass("property-detail")) {
+            return false;
+        }
+
+        function initialize() {
+            var lang = new google.maps.LatLng(-8.67197,115.1426033);
+            var mapOptions = {
+                center: lang,
+                zoom: 16,
+                scrollwheel: false,
+                navigationControl: true,
+                mapTypeControl: false,
+                scaleControl: true,
+                draggable: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                disableDefaultUI: true
+            }
+            var map = new google.maps.Map(document.getElementById('map'),
+                mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: lang,
+                map: map,
+                title: 'Hiriketiya Beachhouse',
+                icon: 'http://www.beachhousehiriketiya.com/wp-content/themes/hybrid/assets/images/pin.png'
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
     },
     initSVG: function() {
 

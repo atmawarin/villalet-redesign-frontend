@@ -97,5 +97,8 @@
 <script src="./js/datepicker-settings.js"></script>
 <script src="./js/jquery.cycle2.min.js"></script>
 <script src="./js/app.js"></script>
+
+<!-- Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 </body>
 </html>

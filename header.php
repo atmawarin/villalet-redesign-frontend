@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-md-8 logo-wrapper">
                         <div class="logo">
-                            <img src="./images/logo.svg" alt="Villalet" class="svg">
+                            <a href="./"><img src="./images/logo.svg" alt="Villalet" class="svg"></a>
                         </div>
                         <div class="tagline">
                             <p>a curated collection of luxury villas</p>
@@ -82,7 +82,7 @@
                                 </ul>
                             </li>
                             <li><a href="#">Guide</a></li>
-                            <li><a href="#">Deals and Specials</a></li>
+                            <li><a href="./property-detail.html">Deals and Specials</a></li>
                             <li><a href="#">How to book</a></li>
                         </ul>
 

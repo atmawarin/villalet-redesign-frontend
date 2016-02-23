@@ -111,6 +111,7 @@ header:before {
     height: 50px
 }
 
+
 /* Header form */
 
 .header-form-wrapper {
@@ -187,7 +188,10 @@ header:before {
 
 .navbar-default #navbar .navbar-nav>.open>a,
 .navbar-default #navbar .navbar-nav>.open>a:focus,
-.navbar-default #navbar .navbar-nav>li>a:hover {
+.navbar-default #navbar .navbar-nav>li>a:hover,
+.navbar-default #navbar .navbar-nav>.active>a,
+.navbar-default #navbar .navbar-nav>.active>a:focus,
+.navbar-default #navbar .navbar-nav>.active>a:hover {
     background-color: #02a2b5;
     color: #fff;
 }
@@ -295,7 +299,7 @@ header:before {
 
 #slideshow .slide-item.cycle-slide-active {
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
@@ -536,18 +540,18 @@ section.desc p {
 
 /* Customer review */
 
-.customer-review {
+section.customer-review {
     text-align: center;
-    color: #fff;
     padding: 40px 0;
     position: relative;
+    color: #fff;
 }
 
-.customer-review > * {
+section.customer-review > * {
     position: relative;
 }
 
-.customer-review:before {
+section.customer-review:before {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.59);
     top: 0;
@@ -557,21 +561,21 @@ section.desc p {
     content: "";
 }
 
-.customer-review h2 {
+section.customer-review h2 {
     margin: 0;
 }
 
-.customer-review p {
+section.customer-review p {
     margin: 20px 0;
 }
 
-.customer-review .review {
+section.customer-review .review {
     font-size: 20px;
     font-family: 'Simonetta', cursive;
     line-height: 1.7;
 }
 
-.customer-review .review .reviewer {
+section.customer-review .review .reviewer {
     font-size: 18px;
     margin-bottom: 0;
 }
@@ -770,4 +774,425 @@ footer:before {
 
 .footer-bottom li:last-child:after {
     display: none;
+}
+
+
+/* Property Details Page ----------  */
+
+.property-detail {
+    color: #696969;
+}
+
+.property-detail h4 {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #29aac0;
+}
+
+
+/* Hero image */
+
+.hero-image {
+    min-height: 600px;
+    position: relative;
+}
+
+.hero-image .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-image .camera-icon {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.hero-image .camera-icon i {
+    background: rgba(0, 0, 0, 0.62);
+    color: #fff;
+    font-size: 50px;
+    height: 65px;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.4s, color 0.4s;
+}
+
+.hero-image .camera-icon i:hover {
+    background: rgba(255, 255, 255, 0.62);
+    color: #000;
+}
+
+
+/* Detail content */
+
+.breadcrumb {
+    padding: 0;
+    background-color: transparent;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.breadcrumb a {
+    color: #AFAFAF;
+}
+
+.breadcrumb a:hover {
+    color: #808080;
+}
+
+.detail-content .title {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    ;
+}
+
+.add-to-list {
+    font-size: 16px;
+    
+    padding: 10px 0;
+}
+
+.add-to-list, .add-to-list a {
+    color: #B5B5B5;
+}
+
+.add-to-list a:hover {
+    color: #29AAC0;
+}
+
+.add-to-list i {
+    font-size: 24px;
+    color: #ffb81a;
+    display: inline-block;
+    height: 23px;
+}
+
+.detail-content {
+    padding: 30px 0;
+    font-size: 18px;
+    color: #696969;
+}
+
+.detail-content p {
+    margin-bottom: 20px;
+}
+
+.detail-content h2 {
+    color: #ea6234;
+    font-size: 36px;
+}
+
+.detail-content .count i {
+    font-size: 53px;
+    display: inline-block;
+    height: 56px;
+    margin-left: 15px;
+}
+
+.detail-content .count .icon-bed {
+    font-size: 67px;
+}
+
+.detail-content .count span {
+    display: inline-block;
+    font-size: 20px;
+    padding: 14px 2px;
+}
+
+.detail-content .count {
+    text-align: right;
+    color: #B3B3B3;
+}
+
+.detail-content .price-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: right;
+}
+
+.detail-content .from-label {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.detail-content .price {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    color: #1daec4;
+}
+
+.detail-content .price span {
+    font-size: 36px;
+}
+
+.detail-content .per-night-label {
+    font-size: 16px;
+}
+
+.detail-content .tax-label {
+    font-size: 14px;
+}
+
+.detail-content .inclusion {
+    font-size: 14px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.detail-content .inclusion h5 {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.detail-content .inclusion p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.detail-content .inclusion .button {
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+    background: #ea6234;
+    border-bottom: 5px solid #cf5328;
+    padding-bottom: 3px;
+    transition: background 0.4s;
+}
+
+.detail-content .inclusion .button:hover {
+    background: #C54B22;
+}
+
+.detail-content .read-more {
+    color: #ea6234;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.detail-content .read-more:hover {
+    color: #04b1c4;
+}
+
+.facilities {
+    background: #f1f1f1;
+    margin-top: 70px;
+    padding-bottom: 20px;
+}
+
+.facilities .feature-icons {
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #B3B3B3;
+    padding: 20px;
+    margin-top: -70px;
+}
+
+.facilities .feature-icons ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.facilities .feature-icons li {
+    float: left;
+    width: 16.6%;
+    text-align: center;
+}
+
+.facilities .feature-icons li i,
+.facilities .feature-icons li span {
+    display: block;
+}
+
+.facilities .feature-icons li i {
+    font-size: 75px;
+    height: 75px;
+}
+
+.facilities .feature-icons .active {
+    color: #04b1c4;
+}
+
+.facilities .feature-icons .active span {
+    color: #888;
+}
+
+
+/* Box */
+
+.facilities .box {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.facilities ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.facilities li {
+    line-height: 1.7;
+}
+
+.facilities .box h4 {
+    margin: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    padding-top: 0;
+    margin-bottom: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.facilities h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.facilities .features span {
+    font-weight: bold;
+}
+
+.facilities .services li {
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-left: 17px;
+}
+
+.facilities .services li:before {
+    content: "\2022";
+    font-size: 26px;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: 6px;
+    color: #2badc3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.facilities .services ul {
+    margin-bottom: 20px;
+}
+
+.facilities .services ul:last-child {
+    margin-bottom: 0;
+}
+
+.facilities .bedroom table {
+    position: relative;
+}
+
+.facilities .bedroom table:before,
+.facilities .bedroom table:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 1px;
+    left: -15px;
+    right: -15px;
+    background-color: #ddd;
+}
+
+.facilities .bedroom table:after {
+    top: auto;
+    bottom: 0;
+}
+
+.facilities .bedroom .table>tbody>tr>td {
+    border-top: 0;
+    border-right: 1px solid #ddd;
+}
+
+.facilities .bedroom .table>tbody>tr>td:first-child {
+    padding-left: 0;
+}
+
+.facilities .bedroom .table>tbody>tr>td:last-child {
+    border: 0;
+    padding-right: 0;
+}
+
+.facilities .bedroom .table>tbody>tr>td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.facilities .bedroom p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.facilities .customer-review {
+    line-height: 1.7;
+}
+
+.facilities .customer-review .name {
+    color: #2badc3;
+}
+
+.facilities .customer-review .rating {
+    margin-top: 10px;
+}
+
+.facilities .customer-review .rating ul {
+    overflow: hidden;
+}
+
+.facilities .customer-review .rating li {
+    float: left;
+    font-size: 18px;
+    color: #ffb81a;
+}
+
+.view-all {
+    color: #ea6234;
+    font-weight: 600;
+    font-style: italic;
+    text-align: right;
+    line-height: 1.5;
+    display: block;
+}
+
+
+/* Map */
+
+section.map {
+    min-height: 470px;
+    position: relative;
+}
+
+section.map #map {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

@@ -1,5 +1,5 @@
 <?php include("./header.php") ?>
-  <div id="content">
+  <div id="content" class="home">
 
     <!-- Slideshow -->
     <section class="slideshow">
