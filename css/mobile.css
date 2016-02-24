@@ -88,4 +88,22 @@
         width: 33.3%;
         margin-bottom: 20px;
     }
+    .search-result .pagination > a,
+    .search-result .pagination > span {
+        display: none;
+    }
+    .search-result .pagination .prev {
+        display: block;
+        float: left;
+    }
+    .search-result-page {
+        padding-top: 0;
+    }
+    .search-result .pagination .next {
+        display: block;
+        float: right;
+    }
+    .search-result .search-item .count {
+        float: left !important;
+    }
 }

@@ -62,6 +62,63 @@ select {
     border: 1px solid #ccc;
     background: #fff url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20#95969a%22%3E%3C/polygon%3E%3C/svg%3E") right 6px center no-repeat;
     background-size: 8px 8px;
+    cursor: pointer;
+}
+
+
+/* Checkbox */
+
+.checkbox {
+    padding-left: 20px;
+}
+
+.checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+}
+
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555555;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+    font-family: "villalet-fontset";
+    content: "\76";
+    color: #fff;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+    background: #eb6234;
+    border: 0;
 }
 
 
@@ -849,6 +906,11 @@ footer:before {
     color: #808080;
 }
 
+.breadcrumb>li+li:before {
+    font-family: villalet-fontset;
+    content: "y"
+}
+
 .detail-content .title {
     overflow: hidden;
     border-bottom: 1px solid #ddd;
@@ -859,11 +921,11 @@ footer:before {
 
 .add-to-list {
     font-size: 16px;
-    
     padding: 10px 0;
 }
 
-.add-to-list, .add-to-list a {
+.add-to-list,
+.add-to-list a {
     color: #B5B5B5;
 }
 
@@ -942,6 +1004,16 @@ footer:before {
     font-size: 16px;
 }
 
+.detail-content .per-night-label:before {
+    height: 3px;
+    width: 92px;
+    background: #6D6D6D;
+    display: inline-block;
+    content: "";
+    vertical-align: baseline;
+    margin-right: 10px;
+}
+
 .detail-content .tax-label {
     font-size: 14px;
 }
@@ -987,6 +1059,10 @@ footer:before {
     color: #ea6234;
     font-weight: 600;
     font-style: italic;
+}
+.detail-content .read-more:after{
+    font-family: villalet-fontset;
+    content: "y"
 }
 
 .detail-content .read-more:hover {
@@ -1181,6 +1257,11 @@ footer:before {
     display: block;
 }
 
+.view-all:after{
+    font-family: villalet-fontset;
+    content: "y"
+}
+
 
 /* Map */
 
@@ -1195,4 +1276,448 @@ section.map #map {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+
+/* Search result page ----------- */
+
+.search-result-page {
+    background-color: #f1f1f1;
+    padding: 30px 0;
+}
+
+.search-result .sidebar {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.search-result .sidebar,
+.search-result .sidebar a {
+    color: #7D7D7D;
+}
+
+.search-result .location-finder {
+    position: relative;
+    padding-left: 66px;
+    ;
+}
+
+.search-result .location-finder span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 7px 0;
+}
+
+.search-result .location-finder input {
+    border-radius: 0;
+}
+
+.search-result .price-range-label {
+    overflow: hidden;
+}
+
+.search-result .price-range {
+    height: 3px;
+    margin: ;;
+    margin-top: 10px;
+}
+
+.search-result .price-per-night {
+    margin-top: 20px;
+}
+
+.search-result .search-filter {
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    margin: 30px 0;
+}
+
+.search-result .sidebar .filter-anchor {
+    font-size: 16px;
+    color: #f07846;
+    text-decoration: none;
+}
+
+.search-result .sidebar .filter-anchor:hover {
+    color: #25b1bb;
+}
+
+.search-result .sidebar .filter-anchor:before {
+    font-family: "villalet-fontset" !important;
+    font-style: normal !important;
+    ;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\75";
+    color: #A5A5A5;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 0px;
+    padding-right: 3px;
+    font-weight: bold;
+}
+
+.search-result .sidebar .filter-anchor.collapsed:before {
+    content: "\74";
+}
+
+.search-result .sidebar .filter-item {
+    padding: 10px 0;
+}
+
+.search-result .sidebar-button .button {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 17px;
+    padding: 7px 29px;
+}
+
+.search-result .sidebar-button .update-search {
+    background-color: transparent;
+    border: 1px solid #f07846;
+    color: #f07846;
+}
+
+.search-result .sidebar-button .update-search:hover {
+    background: #f07846;
+    color: #fff;
+}
+
+.search-result .sidebar-button .clear-search {
+    background-color: #b7b7b7;
+    color: #fff;
+}
+
+.search-result .sidebar-button .clear-search:hover {
+    background: #19afc4;
+}
+
+.search-result #filter-bedroom {
+    max-width: 170px;
+}
+
+
+/* Content */
+
+.search-result .top-filter {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    color: #7D7D7D;
+}
+
+.search-result .top-filter a {
+    color: #7D7D7D;
+}
+
+.search-result .top-filter a:hover {
+    color: #25b1bb;
+}
+
+.search-result .top-filter .header {
+    overflow: hidden;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.search-result .top-filter ul {
+    margin: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.search-result .tabs {
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.search-result .nav-tabs>li>a {
+    line-height: 1;
+    border-radius: 0;
+    background: #d6d6d6;
+    color: #969696;
+    transition: background 0.4s, color 0.4s;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: transparent;
+    background: #25B1BB;
+    color: #fff;
+
+}
+
+.search-result .nav-tabs>li.active>a,
+.search-result .nav-tabs>li.active>a:focus,
+.search-result .nav-tabs>li.active>a:hover {
+    background: transparent;
+    color: #02a2b5;
+}
+
+.search-result .tabs .nav-tabs {
+    border: 0;
+    line-height: 1;
+}
+
+.search-result .tabs .nav-tabs i {
+    height: 14px;
+    display: inline-block;
+}
+
+.search-result .tabs select {
+    padding-right: 60px;
+}
+
+.search-result .search-item .image {
+    position: relative;
+    min-height: 300px;
+}
+
+.search-result .search-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.38);
+    padding: 4px 20px;
+}
+
+.search-result .search-item .overlay i {
+    font-size: 30px;
+    display: inline-block;
+    height: 25px;
+}
+
+.search-result .search-item .count .icon-bed {
+    font-size: 33px;
+}
+
+.search-result .search-item .count span,
+.search-result .search-item .villa-name {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.search-result .search-item .villa-name {
+    text-transform: uppercase;
+}
+
+.search-result .villa-name span {
+    text-transform: none;
+}
+
+.search-result .search-item .image-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.search-result .search-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-result .villa-label {
+    position: absolute;
+    top: -8px;
+    background-color: #ed6229;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: 13px;
+    max-width: 120px;
+    text-align: center;
+    padding: 6px;
+}
+
+.search-result .details {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 0;
+    border-bottom: 4px solid #f07846;
+    overflow: hidden;
+}
+
+.search-result .details > div {
+    position: relative;
+}
+
+.search-result .details > div:first-child:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #ddd;
+}
+
+.search-result .details > div:last-child:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    background: #ddd;
+}
+
+.search-result .details .villa-detail .name {
+    overflow: hidden;
+    padding: 20px 0 5px;
+}
+
+.search-result .villa-detail .name h3 {
+    margin: 0;
+}
+
+.search-result .villa-detail .name h3 a {
+    font-size: 18px;
+    color: #eb6234;
+}
+
+.search-result .villa-detail .name h3 a:hover {
+    color: #19afc4;
+}
+
+.search-result .villa-detail {
+    padding-bottom: 20px;
+
+}
+
+.search-result .add-to-list {
+    font-size: 13px;
+    padding: 2px 0;
+}
+
+.search-result .add-to-list i {
+    font-size: 17px;
+    height: 17px;
+}
+
+.search-result .per-night-label span {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.search-result .per-night-label {
+    font-weight: 600;
+    line-height: 1;
+}
+
+.search-result .price-label {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    color: #19afc4;
+    margin: 2px 0;
+}
+
+.search-result .price-label span {
+    font-size: 25px;
+}
+
+.search-result .fee-label {
+    font-size: 12px;
+}
+
+.search-result .price {
+    text-align: right;
+    padding: 20px 0;
+}
+
+.search-result .price .button {
+    padding: 7px 29px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: 3px solid #B7542B;
+}
+
+.search-result .price .button:hover {
+    background: #B7542B
+}
+
+.search-result .pagination {
+    margin: 0;
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #ADADAD;
+}
+
+.search-result .pagination a {
+    color: #34bccc;
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.search-result .pagination a:hover {
+    color: #f07846;
+}
+
+.search-result .pagination .first:before {
+     font-family: villalet-fontset;
+     content: "z";
+     text-transform: none;
+}
+
+.search-result .pagination .prev:before {
+     font-family: villalet-fontset;
+     content: "A";
+     text-transform: none;
+}
+
+.search-result .pagination .last:after {
+     font-family: villalet-fontset;
+     content: "y";
+     text-transform: none;
+}
+
+.search-result .pagination .next:after {
+     font-family: villalet-fontset;
+     content: "t";
+     text-transform: none;
+}
+
+.search-result .nstSlider {
+    width: 100%;
+    height: 4px;
+    background: #8C8C8C;
+}
+
+.nstSlider .bar {
+    background: #ED6229;
+    height: 4px;
+    top: 0px;
+}
+
+.nstSlider .leftGrip, .nstSlider .rightGrip {
+    width: 12px;
+    height: 12px;
+    border: 3px solid #25b1bb;
+    margin-top: -4px;
 }

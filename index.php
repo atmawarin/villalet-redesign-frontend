@@ -10,30 +10,32 @@
         <div class="enquiry-box">
           <div class="container">
             <div class="box">
-              <div class="col-md-5">
-                <input type="text" class="form-control" placeholder="Bali, Seminyak, Ubud, Canggu" />
-              </div>
-              <div class="col-md-5">
-                <div class="row">
-                  <div class="col-md-4">
-                    <input type="text" placeholder="Check In" class="form-control arrivaldate" position="top"/>
-                  </div>
-                  <div class="col-md-4">
-                    <input type="text" placeholder="Check Out" class="form-control departuredate" position="top" />
-                  </div>
-                  <div class="col-md-4">
-                    <select name="" id="" class="form-control">
-                      <option value="#">Guests</option>
-                      <option value="#">1</option>
-                      <option value="#">2</option>
-                      <option value="#">3</option>
-                    </select>
+              <form action="./search-result.html" method="post">
+                <div class="col-md-5">
+                  <input type="text" class="form-control" placeholder="Bali, Seminyak, Ubud, Canggu" />
+                </div>
+                <div class="col-md-5">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <input type="text" placeholder="Check In" class="form-control arrivaldate" position="top"/>
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" placeholder="Check Out" class="form-control departuredate" position="top" />
+                    </div>
+                    <div class="col-md-4">
+                      <select name="" id="" class="form-control">
+                        <option value="#">Guests</option>
+                        <option value="#">1</option>
+                        <option value="#">2</option>
+                        <option value="#">3</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-2">
-                <button class="button">Search</button>
-              </div>
+                <div class="col-md-2">
+                  <button class="button">Search</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

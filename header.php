@@ -15,11 +15,12 @@
 
     <link href="https://file.myfontastic.com/sspjG3BQYTaXLRy7KttU7W/icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
-
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="./css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery.nstSlider.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
 
     <title>Villalet</title>
 </head>

@@ -3,6 +3,7 @@ var app = {
         app.initSVG();
         app.homeSlideInit();
         app.initMaps();
+        app.initRangeSlider();
     },
     onResize: function() {
 
@@ -12,6 +13,20 @@ var app = {
             manualSpeed: 900,
             slides: '.slide-item',
             timeout: 4000
+        });
+    },
+    initRangeSlider: function() {
+        if(!jQuery("#content").hasClass("search-result")) {
+            return false;
+        }
+        jQuery('.nstSlider').nstSlider({
+            "left_grip_selector": ".leftGrip",
+            "right_grip_selector": ".rightGrip",
+            "value_bar_selector": ".bar",
+            "value_changed_callback": function(cause, leftValue, rightValue) {
+                jQuery('.leftLabel').text(leftValue);
+                jQuery('.rightLabel').text(rightValue);
+            }
         });
     },
     initMaps: function() {

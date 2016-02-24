@@ -96,6 +96,7 @@
 <script src="./js/jquery-ui.js"></script>
 <script src="./js/datepicker-settings.js"></script>
 <script src="./js/jquery.cycle2.min.js"></script>
+<script src="./js/jquery.nstSlider.min.js"></script>
 <script src="./js/app.js"></script>
 
 <!-- Maps -->
