@@ -1257,7 +1257,7 @@ footer:before {
     display: block;
 }
 
-.view-all:after{
+.facilities .customer-review .view-all:after{
     font-family: villalet-fontset;
     content: "y"
 }
