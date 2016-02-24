@@ -11,6 +11,7 @@ body {
 
 a {
     color: #333;
+    transition: color 0.4s;
 }
 
 a:hover {
@@ -684,6 +685,10 @@ section.customer-review .review .reviewer {
     color: #2fbdc8;
     font-weight: bold;
     font-size: 15px;
+}
+
+.link-grid a:hover {
+    color: #f07846;
 }
 
 
