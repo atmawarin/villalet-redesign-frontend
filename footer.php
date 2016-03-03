@@ -98,6 +98,7 @@
 <script src="./js/jquery.cycle2.min.js"></script>
 <script src="./js/jquery.nstSlider.min.js"></script>
 <script src="./js/select2.min.js"></script>
+<script src="./js/gmaps.js"></script>
 <script src="./js/app.js"></script>
 
 <!-- Maps -->

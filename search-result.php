@@ -10,11 +10,26 @@
               <div class="location-finder">
                 <span class="location-label">Location</span>
                 <div class="location-finder-wrapper">
-                  <select class="location-select form-control" multiple="multiple">
+                  <select class="location-select form-control">
                     <option value="Bali">Bali</option>
                     <option value="Canggu">Canggu</option>
                     <option value="Koh Samui">Koh Samui</option>
                   </select>
+                </div>
+              </div>
+
+              <div class="sidebar-button">
+
+                <div class="search-button-wrapper">
+                  <a href="#" class="button update-search">
+                    Search
+                  </a>                  
+                </div>
+
+                <div class="search-button-wrapper">
+                  <a href="#" class="button clear-search">
+                    Clear
+                  </a>
                 </div>
               </div>
 
@@ -190,18 +205,6 @@
                 </div>
               </div>
               <!-- /// Search filter -->
-
-              <div class="sidebar-button">
-                <a href="#" class="button update-search">
-                  Update Search
-                </a>
-
-                <a href="#" class="button clear-search">
-                  Clear Search
-                </a>
-              </div>
-
-
             </div>
           </div>
           <div class="col-md-8">
@@ -449,7 +452,52 @@
 
                 </div>
                 <div role="tabpanel" class="tab-pane" id="map">
-                  Map
+                  <div class="search-map-wrapper">
+                    <div class="search-map"></div>
+                  </div>
+
+                  <section class="browse-wrapper browse-by-experience">
+                      <h4>Browse by Experience:</h4>
+                      <ul>
+                        <li><a href="#">Bars / Nightlife area</a></li>
+                        <li><a href="#">Wedding</a></li>
+                        <li><a href="#">Cultural/Traditional</a></li>
+                        <li><a href="#">Surfing beachfront</a></li>
+                        <li><a href="#">Ocean View</a></li>
+                        <li><a href="#">Beach Walking Distance</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Restaurant Area</a></li>
+                        <li><a href="#">Family</a></li>
+                        <li><a href="#">Child Friendly</a></li>
+                        <li><a href="#">Off the beaten track</a></li>
+                        <li><a href="#">Retreat</a></li>
+                        <li><a href="#">Party</a></li>
+                      </ul>
+                  </section>
+
+                  <section class="browse-wrapper browse-by-experience">
+                      <h4>Browse by Number of Bedrooms:</h4>
+                      <ul>
+                        <li><a href="#">1 Bedroom</a></li>
+                        <li><a href="#">2 Bedrooms</a></li>
+                        <li><a href="#">3 Bedrooms</a></li>
+                        <li><a href="#">4 Bedrooms</a></li>
+                        <li><a href="#">5 Bedrooms</a></li>
+                        <li><a href="#">6 Bedrooms</a></li>
+                        <li><a href="#">7 Bedrooms</a></li>
+                        <li><a href="#">8 Bedrooms</a></li>
+                        <li><a href="#">9 Bedrooms</a></li>
+                        <li><a href="#">10+ Bedrooms</a></li>
+                      </ul>
+                  </section>
+
+                  <section class="browse-wrapper browse-by-type">
+                      <h4>Browse by Property Type:</h4>
+                      <ul>
+                        <li><a href="#">Private Villa</a></li>
+                        <li><a href="#">Villa Complex</a></li>
+                      </ul>
+                  </section>
                 </div>
               </div>
 

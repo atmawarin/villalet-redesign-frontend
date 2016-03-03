@@ -316,10 +316,18 @@ header:before {
     height: 32px;
 }
 
-.select2-container .select2-selection--multiple {
+.select2-container .select2-selection--single {
     border-radius: 0;
     border: 1px solid #ccc;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    height: 34px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 34px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 34px;
 }
 
@@ -1448,20 +1456,13 @@ section.map #map {
 
 .search-result .location-finder {
     position: relative;
-    padding-left: 66px;
 }
 
 .search-result .location-finder-wrapper {
     position: relative;
 }
 
-.search-result .location-finder .location-label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    padding: 8px 0;
-}
+.search-result .location-finder .location-label {}
 
 .search-result .location-finder select {
     height: 34px;
@@ -1488,7 +1489,9 @@ section.map #map {
     border: 1px solid #ddd;
     border-left: 0;
     border-right: 0;
+    border-bottom: 0;
     margin: 30px 0;
+    margin-bottom: 0;
 }
 
 .search-result .sidebar .filter-anchor {
@@ -1528,12 +1531,24 @@ section.map #map {
     padding: 10px 0;
 }
 
+.search-result .sidebar-button {
+    overflow: hidden;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
 .search-result .sidebar-button .button {
-    width: 100%;
-    margin-bottom: 10px;
+    margin-top: 10px;
     text-align: center;
     font-size: 17px;
     padding: 7px 29px;
+    width: 100%;
+}
+
+.search-result .search-button-wrapper {
+    width: 50%;
+    float: left;
+    padding: 0 5px;
 }
 
 .search-result .sidebar-button .update-search {
@@ -1548,12 +1563,14 @@ section.map #map {
 }
 
 .search-result .sidebar-button .clear-search {
-    background-color: #b7b7b7;
-    color: #fff;
+    color: #8E8D8D;
+    border: 1px solid #b7b7b7;
+    background-color: transparent;
 }
 
 .search-result .sidebar-button .clear-search:hover {
-    background: #19afc4;
+    background: #B9B9B9;
+    color: #fff;
 }
 
 .search-result #filter-bedroom {
@@ -1859,6 +1876,46 @@ section.map #map {
     width: 100%;
     height: 4px;
     background: #8C8C8C;
+}
+
+.search-result .search-map-wrapper {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.search-result .search-map {
+    padding-bottom: 100%;
+}
+
+.search-result .browse-wrapper {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.search-result .browse-wrapper h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.search-result .browse-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.search-result .browse-wrapper li {
+    float: left;
+    margin: 5px 0;
+    margin-right: 40px;
+}
+
+.search-result .browse-wrapper a:hover {
+    color: #54d0d7
 }
 
 .nstSlider .bar {

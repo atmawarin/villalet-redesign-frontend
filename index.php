@@ -12,7 +12,7 @@
             <div class="box">
               <form action="./search-result.html" method="get">
                 <div class="col-md-5">
-                  <select class="location-select form-control" multiple="multiple">
+                  <select class="location-select form-control">
                     <option value="Bali">Bali</option>
                     <option value="Canggu">Canggu</option>
                     <option value="Koh Samui">Koh Samui</option>

@@ -9,9 +9,40 @@ var app = {
         app.detailsPageThumbnailReveal();
         app.detailsPageSlideshowTrigger();
         app.addToList();
+        app.initSearchResultMap();
     },
     onResize: function() {
 
+    },
+    initSearchResultMap: function() {
+        if (!jQuery("#content").hasClass("search-result")) {
+            return false;
+        }
+        var map = new GMaps({
+            div: '.search-map',
+            lat: -12.043333,
+            lng: -77.028333,
+            height: 400,
+            width: "100%"
+        });
+
+        map.addMarker({
+            lat: -12.043333,
+            lng: -77.028333,
+            title: 'Lima',
+            click: function(e) {
+                alert('You clicked in this marker');
+            }
+        });
+
+        map.addMarker({
+            lat: -12.053333,
+            lng: -77.028333,
+            title: 'Lima',
+            click: function(e) {
+                alert('You clicked in this marker');
+            }
+        });
     },
     detailsPageLightSliderInit: function() {
 
@@ -58,7 +89,7 @@ var app = {
         });
     },
     addToList: function() {
-        jQuery(".add-to-list").click(function(){
+        jQuery(".add-to-list").click(function() {
             jQuery(this).addClass("shortlisted");
             jQuery(this).find("span").text("Shortlisted");
         });
