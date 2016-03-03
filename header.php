@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="./css/datepicker.css" />
     <link rel="stylesheet" type="text/css" href="./css/jquery.nstSlider.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/select2.min.css" />
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./css/mobile.css" />

@@ -4,9 +4,51 @@ var app = {
         app.homeSlideInit();
         app.initMaps();
         app.initRangeSlider();
+        app.initSelect2();
+        app.detailsPageLightSliderInit();
+        app.detailsPageThumbnailReveal();
+        app.detailsPageSlideshowTrigger();
+        app.addToList();
     },
     onResize: function() {
 
+    },
+    detailsPageLightSliderInit: function() {
+
+        var $cycle = jQuery("#slideshow .images");
+
+        $cycle.cycle({
+            manualSpeed: 500,
+            slides: '.slide',
+            timeout: 0,
+            fx: 'scrollHorz',
+            next: '.next',
+            prev: '.prev',
+            caption: '#slideshow .page-count',
+            captionTemplate: '{{slideNum}} / {{slideCount}}',
+            pager: '#adv-custom-pager .carousel',
+            pagerTemplate: "<a href='#'><img src='{{children.0.src}}' width=60 height=60></a>"
+        });
+
+    },
+    detailsPageThumbnailReveal: function() {
+        jQuery('#adv-custom-pager .thumbnail-button').click(function() {
+            if (!jQuery('body').hasClass('thumbnail-open')) {
+                jQuery('body').addClass('thumbnail-open')
+            } else {
+                jQuery('body').removeClass('thumbnail-open')
+            }
+        })
+    },
+    detailsPageSlideshowTrigger: function() {
+        jQuery('.property-detail .hero-image').click(function() {
+            jQuery("#slideshow").fadeIn(300);
+            return false;
+        });
+
+        jQuery('#slideshow .close img').click(function() {
+            jQuery("#slideshow").fadeOut(300);
+        });
     },
     homeSlideInit: function() {
         jQuery('#slideshow').cycle({
@@ -15,8 +57,19 @@ var app = {
             timeout: 4000
         });
     },
+    addToList: function() {
+        jQuery(".add-to-list").click(function(){
+            jQuery(this).addClass("shortlisted");
+            jQuery(this).find("span").text("Shortlisted");
+        });
+    },
+    initSelect2: function() {
+        jQuery(".location-select").select2({
+            placeholder: "Select a location"
+        });
+    },
     initRangeSlider: function() {
-        if(!jQuery("#content").hasClass("search-result")) {
+        if (!jQuery("#content").hasClass("search-result")) {
             return false;
         }
         jQuery('.nstSlider').nstSlider({
@@ -30,12 +83,12 @@ var app = {
         });
     },
     initMaps: function() {
-        if(!jQuery("#content").hasClass("property-detail")) {
+        if (!jQuery("#content").hasClass("property-detail")) {
             return false;
         }
 
         function initialize() {
-            var lang = new google.maps.LatLng(-8.67197,115.1426033);
+            var lang = new google.maps.LatLng(-8.67197, 115.1426033);
             var mapOptions = {
                 center: lang,
                 zoom: 16,

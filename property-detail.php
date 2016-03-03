@@ -29,7 +29,8 @@
             <div class="title">
               <h4 class="pull-left">Villa Atas Ombak</h4>
               <div class="add-to-list pull-right">
-                  <a href="#">Add to Shortlist <i class="icon-star"></i></a>
+                <span>Add to Shortlist</span>
+                <i class="icon-star"></i>
               </div>
             </div>
             
@@ -234,5 +235,45 @@
     <section class="map">
       <div id="map"></div>
     </section>
+
+    <!-- Slideshow -->
+    <div id="slideshow">
+        <!-- Slideshow -->
+        <div class="images">
+            <div class="slide" style="background-image: url(./images/search-1.jpg)">
+                <img src="./images/search-1.jpg" />
+            </div>
+            <div class="slide" style="background-image: url(./images/search-2.jpg)">
+                <img src="./images/search-2.jpg" />
+            </div>
+            <div class="slide" style="background-image: url(./images/search-3.jpg)">
+                <img src="./images/search-3.jpg" />
+            </div>
+            <div class="slide" style="background-image: url(./images/slide-1.jpg)">
+                <img src="./images/slide-1.jpg" />
+            </div>
+            <div class="slide" style="background-image: url(./images/slide-2.jpg)">
+                <img src="./images/slide-2.jpg" />
+            </div>
+        </div>
+        <!-- Pager -->
+        <div id=adv-custom-pager class="center external">
+            <span class="thumbnail-button">Thumbnails</span>
+            <div class="carousel"></div>
+        </div>
+        <!-- Arrow -->
+        <span class="browse prev">
+            <img src="./images/caret-left.png" alt="">
+        </span>
+        <span class="browse next">
+            <img src="./images/caret-right.png" alt="">
+        </span>
+        <span class="close">
+            <img src="./images/close.png" alt="">
+        </span>
+        <span class="page-count">
+            <span class="current">6</span>/<span class="total">8</span>
+        </span>
+    </div>
   </div>
 <?php include("./footer.php") ?>  

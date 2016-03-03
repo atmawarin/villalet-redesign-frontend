@@ -8,8 +8,14 @@
             <div class="sidebar">
               <!-- Location finder -->
               <div class="location-finder">
-                <span>Location</span>
-                <input type="text" class="form-control" placeholder="Bali, Canggu, Koh Samui">
+                <span class="location-label">Location</span>
+                <div class="location-finder-wrapper">
+                  <select class="location-select form-control" multiple="multiple">
+                    <option value="Bali">Bali</option>
+                    <option value="Canggu">Canggu</option>
+                    <option value="Koh Samui">Koh Samui</option>
+                  </select>
+                </div>
               </div>
 
               <!-- Price per night -->
@@ -283,7 +289,8 @@
 
                               <!-- Add to shortlist -->
                               <div class="add-to-list pull-right">
-                                  <a href="#">Add to Shortlist <i class="icon-star"></i></a>
+                                  <span>Add to Shortlist</span> 
+                                  <i class="icon-star"></i>
                               </div>
                             </div>  
                             <p>Imagine a spectacular cliff top at the edge of the world. Imagine an endless blue on blue panorama of tropical sea and sky. Imagine the most opulent residence in Bali.</p>    
@@ -339,7 +346,8 @@
 
                               <!-- Add to shortlist -->
                               <div class="add-to-list pull-right">
-                                  <a href="#">Add to Shortlist <i class="icon-star"></i></a>
+                                  <span>Add to Shortlist</span> 
+                                  <i class="icon-star"></i>
                               </div>
                             </div>  
                             <p>Imagine a spectacular cliff top at the edge of the world. Imagine an endless blue on blue panorama of tropical sea and sky. Imagine the most opulent residence in Bali.</p>    
@@ -395,7 +403,8 @@
 
                               <!-- Add to shortlist -->
                               <div class="add-to-list pull-right">
-                                  <a href="#">Add to Shortlist <i class="icon-star"></i></a>
+                                  <span>Add to Shortlist</span> 
+                                  <i class="icon-star"></i>
                               </div>
                             </div>  
                             <p>Imagine a spectacular cliff top at the edge of the world. Imagine an endless blue on blue panorama of tropical sea and sky. Imagine the most opulent residence in Bali.</p>    

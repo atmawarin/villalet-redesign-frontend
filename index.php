@@ -12,7 +12,11 @@
             <div class="box">
               <form action="./search-result.html" method="get">
                 <div class="col-md-5">
-                  <input type="text" class="form-control" placeholder="Bali, Seminyak, Ubud, Canggu" />
+                  <select class="location-select form-control" multiple="multiple">
+                    <option value="Bali">Bali</option>
+                    <option value="Canggu">Canggu</option>
+                    <option value="Koh Samui">Koh Samui</option>
+                  </select>
                 </div>
                 <div class="col-md-5">
                   <div class="row">
@@ -77,141 +81,147 @@
           <!-- ******* Item 1 ****** -->
           <div class="col-md-4">
             <!-- Item -->
-            <div class="villa-label">
-              Last minutes discount
-            </div>
-
-            <div class="image">
-              <div class="image-bg" style="background-image: url(./images/villa-1.jpg)"></div>
-              <div class="overlay">
-                <span>15% Off for staying 7 nights or more</span>
-              </div>
-            </div>
-
-            <div class="details">
-              <!-- Villa name -->
-              <div class="name">
-                <h3><a href="#">Villa Sandy</a></h3>
-                <p>Canggu Bali</p>
+            <a href="#">
+              <div class="villa-label">
+                Last minutes discount
               </div>
 
-              <!-- Villa booking price -->
-              <div class="price">
-                <div class="old-price">USD 678</div>
-                <div class="current-price">USD 407</div>
+              <div class="image">
+                <div class="image-bg" style="background-image: url(./images/villa-1.jpg)"></div>
+                <div class="overlay">
+                  <span>15% Off for staying 7 nights or more</span>
+                </div>
               </div>
 
-              <!-- Villa room number -->
-              <div class="room">
-                <i class="icon icon-bed"></i> 
-                3
+              <div class="details">
+                <!-- Villa name -->
+                <div class="name">
+                  <h3>Villa Sandy</h3>
+                  <p>Canggu Bali</p>
+                </div>
+
+                <!-- Villa booking price -->
+                <div class="price">
+                  <div class="old-price">USD 678</div>
+                  <div class="current-price">USD 407</div>
+                </div>
+
+                <!-- Villa room number -->
+                <div class="room">
+                  <i class="icon icon-bed"></i> 
+                  3
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           
           <!-- ******* Item 2 ****** -->
           <div class="col-md-4">
             <!-- Item -->
-
-            <div class="image">
-              <div class="image-bg" style="background-image: url(./images/villa-2.jpg)"></div>
-              <div class="overlay">
-                <span>15% Off for staying 7 nights or more</span>
-              </div>
-            </div>
-
-            <div class="details">
-              <!-- Villa name -->
-              <div class="name">
-                <h3><a href="#">Villa Cinta</a></h3>
-                <p>Seminyak Bali</p>
+            <a href="#">
+              <div class="image">
+                <div class="image-bg" style="background-image: url(./images/villa-2.jpg)"></div>
+                <div class="overlay">
+                  <span>15% Off for staying 7 nights or more</span>
+                </div>
               </div>
 
-              <!-- Villa booking price -->
-              <div class="price">
-                <div class="lowest-price-label">From</div>
-                <div class="current-price">USD 407</div>
-              </div>
+              <div class="details">
+                <!-- Villa name -->
+                <div class="name">
+                  <h3>Villa Cinta</h3>
+                  <p>Seminyak Bali</p>
+                </div>
 
-              <!-- Villa room number -->
-              <div class="room">
-                <i class="icon icon-bed"></i> 
-                3
+                <!-- Villa booking price -->
+                <div class="price">
+                  <div class="lowest-price-label">From</div>
+                  <div class="current-price">USD 407</div>
+                </div>
+
+                <!-- Villa room number -->
+                <div class="room">
+                  <i class="icon icon-bed"></i> 
+                  3
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           
           <!-- ******* Item 3 ****** -->
           <div class="col-md-4">
             <!-- Item -->
-
-            <div class="image">
-              <div class="image-bg" style="background-image: url(./images/villa-3.jpg)"></div>
-              <div class="overlay">
-                <span>15% Off for staying 7 nights or more</span>
-              </div>
-            </div>
-
-            <div class="details">
-              <!-- Villa name -->
-              <div class="name">
-                <h3><a href="#">Marry's Beach</a></h3>
-                <p>Canggu Bali</p>
+            <a href="#">
+              <div class="image">
+                <div class="image-bg" style="background-image: url(./images/villa-3.jpg)"></div>
+                <div class="overlay">
+                  <span>15% Off for staying 7 nights or more</span>
+                </div>
               </div>
 
-              <!-- Villa booking price -->
-              <div class="price">
-                <div class="lowest-price-label">From</div>
-                <div class="current-price">USD 407</div>
-              </div>
+              <div class="details">
+                <!-- Villa name -->
+                <div class="name">
+                  <h3>Marry's Beach</h3>
+                  <p>Canggu Bali</p>
+                </div>
 
-              <!-- Villa room number -->
-              <div class="room">
-                <i class="icon icon-bed"></i> 
-                4
+                <!-- Villa booking price -->
+                <div class="price">
+                  <div class="lowest-price-label">From</div>
+                  <div class="current-price">USD 407</div>
+                </div>
+
+                <!-- Villa room number -->
+                <div class="room">
+                  <i class="icon icon-bed"></i> 
+                  4
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <!-- ******* Item 4 ****** -->
           <div class="col-md-4">
             <!-- Item -->
-            <div class="villa-label">
-              Last minutes discount
-            </div>
-
-            <div class="image">
-              <div class="image-bg" style="background-image: url(./images/villa-1.jpg)"></div>
-              <div class="overlay">
-                <span>15% Off for staying 7 nights or more</span>
-              </div>
-            </div>
-
-            <div class="details">
-              <!-- Villa name -->
-              <div class="name">
-                <h3><a href="#">Villa Sandy</a></h3>
-                <p>Canggu Bali</p>
+            <a href="#">
+              <div class="villa-label">
+                Last minutes discount
               </div>
 
-              <!-- Villa booking price -->
-              <div class="price">
-                <div class="old-price">USD 678</div>
-                <div class="current-price">USD 407</div>
+              <div class="image">
+                <div class="image-bg" style="background-image: url(./images/villa-1.jpg)"></div>
+                <div class="overlay">
+                  <span>15% Off for staying 7 nights or more</span>
+                </div>
               </div>
 
-              <!-- Villa room number -->
-              <div class="room">
-                <i class="icon icon-bed"></i> 
-                3
+              <div class="details">
+                <!-- Villa name -->
+                <div class="name">
+                  <h3>Villa Sandy</h3>
+                  <p>Canggu Bali</p>
+                </div>
+
+                <!-- Villa booking price -->
+                <div class="price">
+                  <div class="old-price">USD 678</div>
+                  <div class="current-price">USD 407</div>
+                </div>
+
+                <!-- Villa room number -->
+                <div class="room">
+                  <i class="icon icon-bed"></i> 
+                  3
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           
           <!-- ******* Item 5 ****** -->
           <div class="col-md-4">
             <!-- Item -->
-
+            <a href="#">
             <div class="image">
               <div class="image-bg" style="background-image: url(./images/villa-2.jpg)"></div>
               <div class="overlay">
@@ -222,7 +232,7 @@
             <div class="details">
               <!-- Villa name -->
               <div class="name">
-                <h3><a href="#">Villa Cinta</a></h3>
+                <h3>Villa Cinta</h3>
                 <p>Seminyak Bali</p>
               </div>
 
@@ -238,137 +248,144 @@
                 3
               </div>
             </div>
+            </a>
           </div>
           
           <!-- ******* Item 6 ****** -->
           <div class="col-md-4">
             <!-- Item -->
-
-            <div class="image">
-              <div class="image-bg" style="background-image: url(./images/villa-3.jpg)"></div>
-              <div class="overlay">
-                <span>15% Off for staying 7 nights or more</span>
-              </div>
-            </div>
-
-            <div class="details">
-              <!-- Villa name -->
-              <div class="name">
-                <h3><a href="#">Marry's Beach</a></h3>
-                <p>Canggu Bali</p>
+            <a href="#">
+              <div class="image">
+                <div class="image-bg" style="background-image: url(./images/villa-3.jpg)"></div>
+                <div class="overlay">
+                  <span>15% Off for staying 7 nights or more</span>
+                </div>
               </div>
 
-              <!-- Villa booking price -->
-              <div class="price">
-                <div class="lowest-price-label">From</div>
-                <div class="current-price">USD 407</div>
-              </div>
+              <div class="details">
+                <!-- Villa name -->
+                <div class="name">
+                  <h3>Marry's Beach</h3>
+                  <p>Canggu Bali</p>
+                </div>
 
-              <!-- Villa room number -->
-              <div class="room">
-                <i class="icon icon-bed"></i> 
-                4
+                <!-- Villa booking price -->
+                <div class="price">
+                  <div class="lowest-price-label">From</div>
+                  <div class="current-price">USD 407</div>
+                </div>
+
+                <!-- Villa room number -->
+                <div class="room">
+                  <i class="icon icon-bed"></i> 
+                  4
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <!-- ******* Item 7 ****** -->
           <div class="col-md-4">
             <!-- Item -->
-            <div class="villa-label">
-              Last minutes discount
-            </div>
-
-            <div class="image">
-              <div class="image-bg" style="background-image: url(./images/villa-1.jpg)"></div>
-              <div class="overlay">
-                <span>15% Off for staying 7 nights or more</span>
-              </div>
-            </div>
-
-            <div class="details">
-              <!-- Villa name -->
-              <div class="name">
-                <h3><a href="#">Villa Sandy</a></h3>
-                <p>Canggu Bali</p>
+            <a href="#">
+              <div class="villa-label">
+                Last minutes discount
               </div>
 
-              <!-- Villa booking price -->
-              <div class="price">
-                <div class="old-price">USD 678</div>
-                <div class="current-price">USD 407</div>
+              <div class="image">
+                <div class="image-bg" style="background-image: url(./images/villa-1.jpg)"></div>
+                <div class="overlay">
+                  <span>15% Off for staying 7 nights or more</span>
+                </div>
               </div>
 
-              <!-- Villa room number -->
-              <div class="room">
-                <i class="icon icon-bed"></i> 
-                3
+              <div class="details">
+                <!-- Villa name -->
+                <div class="name">
+                  <h3>Villa Sandy</h3>
+                  <p>Canggu Bali</p>
+                </div>
+
+                <!-- Villa booking price -->
+                <div class="price">
+                  <div class="old-price">USD 678</div>
+                  <div class="current-price">USD 407</div>
+                </div>
+
+                <!-- Villa room number -->
+                <div class="room">
+                  <i class="icon icon-bed"></i> 
+                  3
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           
           <!-- ******* Item 8 ****** -->
           <div class="col-md-4">
             <!-- Item -->
-
-            <div class="image">
-              <div class="image-bg" style="background-image: url(./images/villa-2.jpg)"></div>
-              <div class="overlay">
-                <span>15% Off for staying 7 nights or more</span>
-              </div>
-            </div>
-
-            <div class="details">
-              <!-- Villa name -->
-              <div class="name">
-                <h3><a href="#">Villa Cinta</a></h3>
-                <p>Seminyak Bali</p>
+            
+            <a href="#">
+              <div class="image">
+                <div class="image-bg" style="background-image: url(./images/villa-2.jpg)"></div>
+                <div class="overlay">
+                  <span>15% Off for staying 7 nights or more</span>
+                </div>
               </div>
 
-              <!-- Villa booking price -->
-              <div class="price">
-                <div class="lowest-price-label">From</div>
-                <div class="current-price">USD 407</div>
-              </div>
+              <div class="details">
+                <!-- Villa name -->
+                <div class="name">
+                  <h3>Villa Cinta</h3>
+                  <p>Seminyak Bali</p>
+                </div>
 
-              <!-- Villa room number -->
-              <div class="room">
-                <i class="icon icon-bed"></i> 
-                3
+                <!-- Villa booking price -->
+                <div class="price">
+                  <div class="lowest-price-label">From</div>
+                  <div class="current-price">USD 407</div>
+                </div>
+
+                <!-- Villa room number -->
+                <div class="room">
+                  <i class="icon icon-bed"></i> 
+                  3
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           
           <!-- ******* Item 9 ****** -->
           <div class="col-md-4">
             <!-- Item -->
-
-            <div class="image">
-              <div class="image-bg" style="background-image: url(./images/villa-3.jpg)"></div>
-              <div class="overlay">
-                <span>15% Off for staying 7 nights or more</span>
-              </div>
-            </div>
-
-            <div class="details">
-              <!-- Villa name -->
-              <div class="name">
-                <h3><a href="#">Marry's Beach</a></h3>
-                <p>Canggu Bali</p>
+            <a href="#">
+              <div class="image">
+                <div class="image-bg" style="background-image: url(./images/villa-3.jpg)"></div>
+                <div class="overlay">
+                  <span>15% Off for staying 7 nights or more</span>
+                </div>
               </div>
 
-              <!-- Villa booking price -->
-              <div class="price">
-                <div class="lowest-price-label">From</div>
-                <div class="current-price">USD 407</div>
-              </div>
+              <div class="details">
+                <!-- Villa name -->
+                <div class="name">
+                  <h3>Marry's Beach</h3>
+                  <p>Canggu Bali</p>
+                </div>
 
-              <!-- Villa room number -->
-              <div class="room">
-                <i class="icon icon-bed"></i> 
-                4
+                <!-- Villa booking price -->
+                <div class="price">
+                  <div class="lowest-price-label">From</div>
+                  <div class="current-price">USD 407</div>
+                </div>
+
+                <!-- Villa room number -->
+                <div class="room">
+                  <i class="icon icon-bed"></i> 
+                  4
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           
           <!-- View all button -->
