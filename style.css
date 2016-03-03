@@ -293,7 +293,7 @@ header:before {
 
 .enquiry-box {
     position: absolute;
-    bottom: 35px;
+    top: 75%;
     z-index: 150;
     left: 0;
     right: 0;
