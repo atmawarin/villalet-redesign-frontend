@@ -106,4 +106,14 @@
     .search-result .search-item .count {
         float: left !important;
     }
+    .availability-box .villa-name {
+        margin-top: 30px;
+    }
+    .about-us-box .image {
+        padding-bottom: 88%;
+    }
+    .about-us-box .text {
+        width: 100%;
+        padding: 20px 20px;
+    }
 }

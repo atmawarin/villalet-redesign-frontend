@@ -311,7 +311,7 @@
                             <div class="fee-label">
                               Including tax & services fees
                             </div>
-                            <a href="#" class="button">View Detail</a>
+                            <a href="./check-availability.html" class="button">View Detail</a>
                           </div>                          
                         </div>
                     </div>
@@ -368,7 +368,7 @@
                             <div class="fee-label">
                               Including tax & services fees
                             </div>
-                            <a href="#" class="button">View Detail</a>
+                            <a href="./check-availability.html" class="button">View Detail</a>
                           </div>                          
                         </div>
                     </div>
@@ -425,7 +425,7 @@
                             <div class="fee-label">
                               Including tax & services fees
                             </div>
-                            <a href="#" class="button">View Detail</a>
+                            <a href="./check-availability.html" class="button">View Detail</a>
                           </div>                          
                         </div>
                     </div>
