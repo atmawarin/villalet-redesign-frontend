@@ -1,5 +1,17 @@
 <?php include("./header.php") ?>
   <div id="content" class="property-detail">
+    <section class="breadcrumb-section">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Search Results</a></li>
+          <li><a href="#">Indonesia Villas</a></li>
+          <li><a href="#">Bali Villas</a></li>
+          <li><a href="#">Petitenget Villas</a></li>
+          <li><a href="#">Villa Atas Ombak</a></li>
+        </ul>        
+      </div>
+    </section>
     <!-- Hero image -->
     <section class="hero-image">
       <div class="image" style="background-image: url(./images/hero-image.jpg)"></div>
@@ -12,18 +24,6 @@
     <section class="detail-content">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <!-- Breadcrumb -->
-              <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Search Results</a></li>
-                <li><a href="#">Indonesia Villas</a></li>
-                <li><a href="#">Bali Villas</a></li>
-                <li><a href="#">Petitenget Villas</a></li>
-                <li><a href="#">Villa Atas Ombak</a></li>
-              </ul>
-          </div>
-
           <div class="col-md-8">
             <!-- Title -->
             <div class="title">
@@ -125,7 +125,6 @@
             <!-- Bedroom -->
             <div class="bedroom box">
               <h4>Bedroom</h4>
-              <h5>3 Bedrooms</h5>
               <table class="table">
                 <tr>
                   <td>Bedroom 1</td>

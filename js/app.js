@@ -52,7 +52,6 @@ var app = {
             manualSpeed: 500,
             slides: '.slide',
             timeout: 0,
-            fx: 'scrollHorz',
             next: '.next',
             prev: '.prev',
             caption: '#slideshow .page-count',

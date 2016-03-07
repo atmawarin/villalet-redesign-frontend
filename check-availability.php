@@ -1,4 +1,4 @@
-<?php include("./header.php") ?>
+<?php include("./header-simplified.php") ?>
   <div id="content" class="check-availability">
     <div class="container">
       <section class="availability-box page-box">
@@ -8,6 +8,10 @@
             <div class="image">
               <img src="./images/availability-image-placeholder.png" alt="">
             </div>
+            <div class="count">
+              <i class="icon-bed"></i> <span>3</span>
+              <i class="icon-bath"></i> <span>4</span>
+            </div>            
             <ul class="features">
               <li>Direct booking with the property manager</li>
               <li>Best price guarantee</li>
@@ -67,10 +71,9 @@
                 <!-- Firmdate checkbox -->
                 <div class="col-md-12">
                   <div class="checkbox">
-                    <label>
-                      <input type="checkbox">I don't have firms date
-                    </label>
-                  </div>                  
+                      <input id="checkbox-bedroom-2" type="checkbox" />
+                      <label for="checkbox-bedroom-2">I don't have firms date</label>
+                   </div>                 
                 </div>
 
                 <!-- First name and last name -->
@@ -97,9 +100,6 @@
                   <div class="col-md-5">
                     <button class="button enquire-now">Enquire Now</button>
                   </div>
-                  <div class="col-md-12 text-right">
-                    <a href="#" class="cancel">Cancel</a>
-                  </div>
                 </div>
               </div>
             </form>
@@ -108,4 +108,4 @@
       </section>
     </div>
   </div>
-<?php include("./footer.php") ?>  
+<?php include("./footer-core.php") ?>  

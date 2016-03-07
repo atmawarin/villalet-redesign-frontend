@@ -453,12 +453,12 @@ header:before {
     transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.villa-grid .image:hover .image-bg {
+.villa-grid .row > div > a:hover .image-bg {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.villa-grid .image:hover .overlay {
+.villa-grid .row > div > a:hover .overlay {
     opacity: 1;
 }
 
@@ -821,7 +821,7 @@ footer:before {
 }
 
 .footer-top .social-links li a {
-    color: #000;
+    color: #242B33;
 }
 
 
@@ -875,6 +875,25 @@ footer:before {
     color: #29aac0;
 }
 
+.breadcrumb-section .breadcrumb {
+    padding: 8px 15px;
+    background-color: transparent;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.breadcrumb-section .breadcrumb a {
+    color: #AFAFAF;
+}
+
+.breadcrumb-section .breadcrumb a:hover {
+    color: #808080;
+}
+
+.breadcrumb-section .breadcrumb>li+li:before {
+    font-family: villalet-fontset;
+    content: "y"
+}
 
 /* Slideshow */
 
@@ -1043,26 +1062,6 @@ footer:before {
 
 
 /* Detail content */
-
-.breadcrumb {
-    padding: 0;
-    background-color: transparent;
-    font-size: 13px;
-    margin-bottom: 0;
-}
-
-.breadcrumb a {
-    color: #AFAFAF;
-}
-
-.breadcrumb a:hover {
-    color: #808080;
-}
-
-.breadcrumb>li+li:before {
-    font-family: villalet-fontset;
-    content: "y"
-}
 
 .detail-content .title {
     overflow: hidden;
@@ -1300,11 +1299,16 @@ footer:before {
 .facilities .box h4 {
     margin: 0;
     padding: 10px 15px;
-    border-bottom: 1px solid #ddd;
     padding-top: 0;
-    margin-bottom: 15px;
     margin-left: -15px;
     margin-right: -15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.facilities .bedroom h4 {
+    margin-bottom: 0;
+    border-bottom: 0;
 }
 
 .facilities h5 {
@@ -1411,12 +1415,16 @@ footer:before {
 }
 
 .facilities .customer-review .view-all {
-    color: #ea6234;
+    color: #29aac0;
     font-weight: 600;
     font-style: italic;
     text-align: right;
     line-height: 1.5;
     display: block;
+}
+
+.facilities .customer-review .view-all:hover {
+    color: #116573;
 }
 
 .facilities .customer-review .view-all:after {
@@ -1971,7 +1979,41 @@ section.map #map {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+}
+
+.availability-box .count {
+    font-size: 16px;
+    line-height: 2.1;
+    padding: 10px 0;
+    text-align: right;
+}
+
+.availability-box .count i {
+    font-size: 27px;
+    display: inline-block;
+    line-height: 1;
+}
+
+.availability-box .count .icon-bed {
+    font-size: 33px;
+}
+
+.availability-box .features li {
+    position: relative;
+    padding-right: 20px;
+    line-height: 2.6;
+    border-bottom: 1px dotted #ddd;
+}
+
+.availability-box .features li:after {
+    font-family: villalet-fontset;
+    content: "C";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: #03b4c5;
+    font-size: 18px;
 }
 
 .availability-box .villa-name {
@@ -1995,7 +2037,6 @@ section.map #map {
 
 .availability-box .title-label {
     margin: 10px 0;
-
 }
 
 .availability-box label {
@@ -2035,7 +2076,7 @@ section.map #map {
     text-align: center;
     background-color: transparent;
     color: #f07846;
-    border: 1px solid;    
+    border: 1px solid;
 }
 
 .availability-box .request-info:hover {
@@ -2059,10 +2100,12 @@ section.map #map {
     text-transform: uppercase;
 }
 
+
 /* About us */
+
 #content.about-us {
     background: #f1f1f1;
-    color: #969696;
+    color: #333;
 }
 
 .about-us-box {
@@ -2090,19 +2133,15 @@ section.map #map {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .about-us-box .text h3 {
-    font-size: 18px;
     margin-top: 0;
     line-height: 1.5;
-
 }
 
 .about-us-box .text p {
     margin: 0 0 15px;
-
 }
 
 .about-us-box .signature {

@@ -39,66 +39,8 @@
                             <p>in Bali and beyond</p>
                         </div>
                     </div>
-                    <div class="col-md-4 header-form-wrapper">
-                        <div class="header-form">
-                            <select name="language" id="lang" class="header-form-control">
-                                <option value="en">EN</option>
-                                <option value="en">ID</option>
-                                <option value="en">JP</option>
-                            </select>
-                            <select name="currency" id="curr" class="header-form-control">
-                                <option value="en">USD</option>
-                                <option value="en">IDR</option>
-                                <option value="en">JPY</option>
-                            </select>
-                            <button type="submit" class="header-form-control">Login</button>
-                        </div>                        
-                    </div>
                 </div>
             </div>
-        </div>
-        <div class="header-middle">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Destinations <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Seminyak</a></li>
-                                    <li><a href="#">Ubud</a></li>
-                                    <li><a href="#">Canggu</a></li>
-                                    <li><a href="#">Koh Samui</a></li>
-                                    <li><a href="#">Phuket</a></li>
-                                    <li><a href="#">Fiji</a></li>
-                                    <li><a href="#">Sri Langka</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Guide</a></li>
-                            <li><a href="./property-detail.html">Deals and Specials</a></li>
-                            <li><a href="#">How to book</a></li>
-                        </ul>
-
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="#">
-                                    <i class="icon icon-bell"></i> 
-                                    <span>Help me find a villa</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
         </div>
     </header>
   <div id="content" class="check-availability">
@@ -110,6 +52,10 @@
             <div class="image">
               <img src="./images/availability-image-placeholder.png" alt="">
             </div>
+            <div class="count">
+              <i class="icon-bed"></i> <span>3</span>
+              <i class="icon-bath"></i> <span>4</span>
+            </div>            
             <ul class="features">
               <li>Direct booking with the property manager</li>
               <li>Best price guarantee</li>
@@ -169,10 +115,9 @@
                 <!-- Firmdate checkbox -->
                 <div class="col-md-12">
                   <div class="checkbox">
-                    <label>
-                      <input type="checkbox">I don't have firms date
-                    </label>
-                  </div>                  
+                      <input id="checkbox-bedroom-2" type="checkbox" />
+                      <label for="checkbox-bedroom-2">I don't have firms date</label>
+                   </div>                 
                 </div>
 
                 <!-- First name and last name -->
@@ -199,9 +144,6 @@
                   <div class="col-md-5">
                     <button class="button enquire-now">Enquire Now</button>
                   </div>
-                  <div class="col-md-12 text-right">
-                    <a href="#" class="cancel">Cancel</a>
-                  </div>
                 </div>
               </div>
             </form>
@@ -210,99 +152,6 @@
       </section>
     </div>
   </div>
-<footer>
-  <section class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <!-- Villalet Villas -->
-          <div class="col-md-4">
-            <h3>Villalet Villas</h3>
-            <div class="row">
-              <div class="col-md-6">
-                <ul>
-                  <li><a href="#">Bali Villas</a></li> 
-                  <li><a href="#">Seminyak Villas</a></li>   
-                  <li><a href="#">Legian</a></li>   
-                  <li><a href="#">Ubud Villas</a></li>     
-                  <li><a href="#">Sanur Villas</a></li>    
-                  <li><a href="#">Canggu Villas</a></li>     
-                  <li><a href="#">Kuta Villas</a></li>   
-                  <li><a href="#">Jimbaran Villas</a></li>  
-                  <li><a href="#">Nusa Dua Villas</a></li>     
-                  <li><a href="#">Uluwatu Villas Villas</a></li>  
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul>
-                  <li><a href="#">Thailand  Villas</a></li>    
-                  <li><a href="#">Koh Samui Villas</a></li>  
-                  <li><a href="#">Phuket Villas</a></li>   
-                </ul>
-
-                <ul>
-                  <li><a href="#">Fiji Villas </a></li>
-                </ul>
-
-                <ul>
-                  <li><a href="#">Sri Lanka Villas</a></li>   
-                  <li><a href="#">Galle Villas</a></li>  
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="col-md-4">
-            <h3>Newsletter</h3>
-            <form action="#">
-              <input type="text" placeholder="Your Name" class="form-control">
-              <input type="text" placeholder="Your Email Address" class="form-control">
-              <button type="submit" class="button">Sign Up</button>
-            </form>
-          </div>
-
-          <!-- Links -->
-          <div class="col-md-4">
-              <div class="footer-logo">
-                <img src="./images/logo.svg" alt="Villalet" class="svg">
-              </div>
-              <ul class="social-links">
-                <li><a href=""><i class="icon-twitter"></i></a></li>
-                <li><a href=""><i class="icon-facebook"></i></a></li>
-                <li><a href=""><i class="icon-linkedin"></i></a></li>
-                <li><a href=""><i class="icon-google-plus"></i></a></li>
-                <li><a href=""><i class="icon-pinterest"></i></a></li>
-              </ul>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section class="footer-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <ul>
-            <li>Villalet</li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Villalet Guarantee</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 text-right">
-          <ul>
-            <li><a href="#">Villalet</a></li>
-            <li><a href="./about-us.html">About</a></li>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Contact Villalet</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-</footer>
-
 <script src="./js/jquery-1.11.3.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="./js/jquery-ui.js"></script>
