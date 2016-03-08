@@ -108,4 +108,4 @@
       </section>
     </div>
   </div>
-<?php include("./footer-core.php") ?>  
+<?php include("./footer-simplified.php") ?>  

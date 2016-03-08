@@ -1662,11 +1662,6 @@ section.map #map {
     padding-right: 60px;
 }
 
-.search-result .search-item .image {
-    position: relative;
-    min-height: 300px;
-}
-
 .search-result .search-item .overlay {
     position: absolute;
     bottom: 0;
@@ -1710,6 +1705,20 @@ section.map #map {
     left: 0;
     background-size: cover;
     background-position: center;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.search-result .search-item .image {
+    position: relative;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.search-result .search-item .image:hover .image-bg {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .search-result .search-item {
